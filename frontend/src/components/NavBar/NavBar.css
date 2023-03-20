@@ -9,9 +9,13 @@ li {
 }
 
 .navBar {
-  background: steelblue;
+  background: pink;
   box-shadow: 4px 2px 5px gray;
   color: white;
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 2rem;
   padding: 1.5rem 2rem;
 }
@@ -32,4 +36,23 @@ li {
 .brand {
   cursor: pointer;
   font-size: 2rem;
+}
+
+/* Logo Name */
+
+.soda {
+  font-family: sans-serif;
+}
+
+.pop {
+  color: red;
+  padding-right: 700px;
+}
+
+.product {
+  padding-right: 40px;
+}
+
+.about {
+  padding-right: 40px;
 }

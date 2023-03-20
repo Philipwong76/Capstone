@@ -12,8 +12,11 @@ const Navbar = () => {
       <ul>
         <li className="brand">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <b>React/Django JWT</b>
+            <b className="soda">Soda</b>
+            <b className="pop">POP</b>
           </Link>
+            <a className="product">Product</a>
+            <a className="about">About</a>        
         </li>
         <li>
           {user ? (
