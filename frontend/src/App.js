@@ -4,6 +4,7 @@ import "./App.css";
 
 // Pages Imports
 import Home from "./pages/Home/Home";
+
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
@@ -11,9 +12,11 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+import ProductPage from "./pages/Product/ProductPage";
+import AboutPage from "./pages/About/AboutPage";
 
 // Util Imports
-import PrivateRoute from "./utils/PrivateRoute";
+//import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home/>}/>
+        <Route path="Product" element={<ProductPage/>}/>
+        <Route path="About" element={<AboutPage/>}/>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />

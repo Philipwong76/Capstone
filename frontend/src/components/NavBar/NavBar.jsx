@@ -15,8 +15,12 @@ const Navbar = () => {
             <b className="soda">Soda</b>
             <b className="pop">POP</b>
           </Link>
+          <Link to='Product'>
             <a className="product">Product</a>
-            <a className="about">About</a>        
+          </Link>
+          <Link to='About'>
+            <a className="about">About</a>
+          </Link>       
         </li>
         <li>
           {user ? (

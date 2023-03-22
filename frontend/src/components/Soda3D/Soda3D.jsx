@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import * as THREE from "three";
+import "./Soda3D.css"
 class Soda3D extends Component {
   componentDidMount() {
     // === THREE.JS CODE START ===
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
     document.body.appendChild( renderer.domElement );
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
     const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
@@ -24,7 +25,7 @@ class Soda3D extends Component {
   }
   render() {
     return (
-      <div/>
+      <div class="soda"/>
     )
   }
 }
