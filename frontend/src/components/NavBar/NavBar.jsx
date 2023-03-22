@@ -16,10 +16,10 @@ const Navbar = () => {
             <b className="pop">POP</b>
           </Link>
           <Link to='Product'>
-            <a className="product">Product</a>
+            <b className="product">Product</b>
           </Link>
           <Link to='About'>
-            <a className="about">About</a>
+            <b className="about">About</b>
           </Link>       
         </li>
         <li>
