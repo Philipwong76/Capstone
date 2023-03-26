@@ -1,8 +1,9 @@
 // import React, { useState, useEffect } from 'react'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import "./ProductPage.css";
 import { sodas } from './sodas';
 import DisplayProduct from '../../components/DisplayProduct/DisplayProduct';
-// import DisplayProduct from '../../components/DisplayProduct/DisplayProduct';
 
 const ProductPage = () => {
 //     const [sodas] = useState([]);
@@ -16,15 +17,15 @@ const ProductPage = () => {
 //     return response
 //   }
     return ( 
-        <div>
+        <div className='feeds'>
             <h1>Products</h1>
-            <div className='feeds'>
+            <Row>
                 {sodas.map(soda => (
-                    <div key={soda.id}>
+                    <Col key={soda.id}>
                         <DisplayProduct soda={soda} />
-                    </div>
+                    </Col>
                 ))}
-            </div>
+            </Row>
         </div>
      );
 }

@@ -1,14 +1,22 @@
 import React from "react";
+import "./DisplayProduct.css";
 import { Card } from 'react-bootstrap'
 
 const DisplayProduct = ({soda}) => {
     return ( 
-        <Card>            
+        <Card className="card">            
             <Card.Body>Product</Card.Body>
             <a href={`/soda/${soda.id}`}>
                 <Card.Title as="div">
                     <strong>{soda.product}</strong>
                 </Card.Title>
+                </a>
+
+                <Card>
+                    <a href={`/soda/${soda.id}`}>
+                        <Card.Img src={soda.image} className="images"></Card.Img>
+                    </a>
+                </Card>
 
                 <Card.Text as="div">
                     <div>
@@ -38,7 +46,6 @@ const DisplayProduct = ({soda}) => {
                         
                     </div>
                 </Card.Text>
-            </a>
         </Card>
      );
 }
