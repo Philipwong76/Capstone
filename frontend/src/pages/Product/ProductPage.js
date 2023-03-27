@@ -1,9 +1,9 @@
 // import React, { useState, useEffect } from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import "./ProductPage.css";
 import { sodas } from './sodas';
 import DisplayProduct from '../../components/DisplayProduct/DisplayProduct';
+import { Container } from 'react-bootstrap';
 
 
 const ProductPage = () => {
@@ -18,7 +18,7 @@ const ProductPage = () => {
 //     return response
 //   }
     return ( 
-        <div className='feeds'>
+        <Container>
             <h1>Products</h1>
             <Row>
                 {sodas.map(soda => (
@@ -27,7 +27,7 @@ const ProductPage = () => {
                     </Col>
                 ))}
             </Row>
-        </div>
+        </Container>
      );
 }
  
