@@ -7,7 +7,7 @@ function Home() {
     return ( 
         <div>
             <h1> FRESH COLA FOR ALL </h1>
-            {/* <Soda3D class="soda" /> */}
+            <Soda3D class="soda" />
         </div>
      );
 }

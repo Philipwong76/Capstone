@@ -4,9 +4,10 @@
     border: 1px solid gray;
     border-radius: 12px;
     padding: 10px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .images {
-    width: 200px;
+    width: 100%;
+    
 }

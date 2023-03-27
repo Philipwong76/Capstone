@@ -5,6 +5,7 @@ import "./ProductPage.css";
 import { sodas } from './sodas';
 import DisplayProduct from '../../components/DisplayProduct/DisplayProduct';
 
+
 const ProductPage = () => {
 //     const [sodas] = useState([]);
 //   useEffect(() => {
