@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import { sodas } from './sodas';
 import DisplayProduct from '../../components/DisplayProduct/DisplayProduct';
 import { Container } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
+import ViewProductPage from '../../components/ViewProductPage/ViewProductPage';
 
 
 const ProductPage = () => {
@@ -18,16 +20,18 @@ const ProductPage = () => {
 //     return response
 //   }
     return ( 
-        <Container>
-            <h1>Products</h1>
-            <Row>
-                {sodas.map(soda => (
-                    <Col key={soda.id}>
-                        <DisplayProduct soda={soda} />
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <div>
+            <Container>
+                <h1>Products</h1>
+                <Row>
+                    {sodas.map(soda => (
+                        <Col key={soda.id}>
+                            <DisplayProduct soda={soda} />
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </div>
      );
 }
  

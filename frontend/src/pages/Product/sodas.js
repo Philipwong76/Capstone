@@ -61,5 +61,5 @@ export const sodas = [
         "price": 2,
         "size": "1 can",
         "flavor": "Grape"
-    }
+    },
 ]

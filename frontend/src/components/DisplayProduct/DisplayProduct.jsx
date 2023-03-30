@@ -6,14 +6,14 @@ const DisplayProduct = ({soda}) => {
     return ( 
         <Card className="card">            
             <Card.Body>Product</Card.Body>
-            <a href={`/soda/${soda.id}`}>
+            <a href={`/product/${soda.id}`}>
                 <Card.Title as="div">
                     <strong>{soda.product}</strong>
                 </Card.Title>
                 </a>
 
                 <Card>
-                    <a href={`/soda/${soda.id}`}>
+                    <a href={`/product/${soda.id}`}>
                         <Card.Img src={soda.image} className="images"></Card.Img>
                     </a>
                 </Card>
