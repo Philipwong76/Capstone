@@ -21,5 +21,5 @@ Starter code for full stack React + Django applications using JWT for authentica
 https://threejs.org/docs/index.html#manual/en/introduction/Installation
 
 #SketchFad 
-Soda can 3D model from repective creative
+## Soda can 3D model from repective creative
 https://sketchfab.com/3d-models/soda-can-bf7902fb64644da3beb0ce1fce07f4aa
