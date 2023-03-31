@@ -15,7 +15,9 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "three": "^0.150.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
+    "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.8.tgz"
   },
   "scripts": {
     "start": "react-scripts start",

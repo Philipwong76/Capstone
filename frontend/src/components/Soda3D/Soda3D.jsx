@@ -1,47 +1,45 @@
-import * as THREE from "three";
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+import React, {
+    useRef,
+    useCallback,
+    useEffect,
+} from "react";
+import {
+    ViewerApp,
+    AssetManagerPlugin,
+    addBasePlugins
+} from "webgi";
+import "./soda.css"
 
-function Soda3D(props) {
-    
-  // Instantiate a loader
-  const loader = new GLTFLoader();
+function Soda3D() {
+    const canvasRef = useRef(null)
 
-  // Optional: Provide a DRACOLoader instance to decode compressed mesh data
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath( '/examples/jsm/libs/draco/' );
-  loader.setDRACOLoader( dracoLoader );
-  const scene = new THREE.Scene();
-  // Load a glTF resource
-  loader.load(
-      // resource URL
-      '../../../assets/Cola.gltf',
-      // called when the resource is loaded
-      function ( gltf ) {
+    const setupViewer = useCallback(async () => {
+        const viewer = new ViewerApp({
+            canvas: canvasRef.current,
+        })
 
-          scene.add( gltf.scene );
+        const manager = await viewer.addPlugin(AssetManagerPlugin)
 
-          gltf.animations(); // Array<THREE.AnimationClip>
-          gltf.scene(); // THREE.Group
-          gltf.scenes(); // Array<THREE.Group>
-          gltf.cameras(); // Array<THREE.Camera>
-          gltf.asset(); // Object
+        // or use this to add all main ones at once.
+        await addBasePlugins(viewer)
 
-      },
-      // called while loading is progressing
-      function ( xhr ) {
 
-          console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+        // This must be called once after all plugins are added.
+        viewer.renderer.refreshPipeline()
 
-      },
-      // called when loading has errors
-      function ( error ) {
+        await manager.addFromPath("/assets/soda_can_red.glb")
 
-          console.log( 'An error happened' );
+        viewer.scene.activeCamera.setCameraOptions({constrolsEneabled: false});
+    }, []);
 
-      }
-  );
-  return(null)
+    useEffect(() => {
+        setupViewer();
+    }, []);
+    return (
+        <div id="webgi-canvas-container">
+            <canvas id="webgi-canvas" ref={canvasRef} />
+        </div>
+    );
 }
 
 export default Soda3D;
