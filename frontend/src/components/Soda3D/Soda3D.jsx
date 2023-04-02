@@ -29,7 +29,9 @@ function Soda3D() {
 
         await manager.addFromPath("/assets/soda_can_red.glb")
 
-        viewer.scene.activeCamera.setCameraOptions({constrolsEneabled: false});
+        viewer.scene.activeCamera.position.set(25,25,75);
+        viewer.scene.activeCamera.positionUpdated();
+        // viewer.scene.activeCamera.setCameraOptions({constrolsEneabled: false});
     }, []);
 
     useEffect(() => {
