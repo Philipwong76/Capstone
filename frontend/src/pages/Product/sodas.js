@@ -1,4 +1,4 @@
-export const sodas = [
+export const Soda_products = [
     {
         "id": 1,
         "image": '/images/Cola.jpeg',

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Button, Card, Container, ListGroup } from "react-bootstrap";
-import { sodas } from "../../pages/Product/sodas";
+import { Soda_products } from "../../pages/Product/sodas";
 import "./ProductDetail.css";
 
 const ProductDetail = (props) => {
-    const product = sodas.find((soda) => soda.id)
+    const product = Soda_products.find((soda) => soda.id)
     return ( 
         <Container>
 
