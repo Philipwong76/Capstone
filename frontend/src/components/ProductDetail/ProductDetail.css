@@ -1,0 +1,29 @@
+.group1 {
+    padding-right: 100px;
+}
+
+.Picture {
+    width: 80%;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.soda {
+    width: 100%;
+    
+}
+
+.label {
+    display: flex;
+    padding-left: 60px;
+}
+
+.btm {
+    color: white;
+    background-color: red;
+}
+
+
+

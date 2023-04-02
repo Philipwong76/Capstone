@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap'
 
 const DisplayProduct = ({soda}) => {
     return ( 
-        <Card className="card">            
+        <Card className="DisplayCards">            
             <Card.Body>Product</Card.Body>
             <a href={`/product/${soda.id}`}>
                 <Card.Title as="div">
