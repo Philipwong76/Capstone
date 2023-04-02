@@ -6,7 +6,9 @@ function Home() {
 
     return ( 
         <div>
-            <h1> FRESH COLA FOR ALL </h1>
+            <h2> FRESH COLA FOR ALL </h2>
+            <h1>SODAPOP indtroduces our main product of the year</h1>
+            <h1>POP COLA</h1>
             <Soda3D class="soda" />
         </div>
      );

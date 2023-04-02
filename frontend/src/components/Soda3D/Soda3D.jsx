@@ -31,6 +31,7 @@ function Soda3D() {
 
         viewer.scene.activeCamera.position.set(25,25,75);
         viewer.scene.activeCamera.positionUpdated();
+        viewer.scene.setBackground("white");
         // viewer.scene.activeCamera.setCameraOptions({constrolsEneabled: false});
     }, []);
 
