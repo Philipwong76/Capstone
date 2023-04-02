@@ -1,0 +1,21 @@
+.title {
+    color: silver;
+}
+
+.title2 {
+    padding-bottom: 20px;
+}
+
+.redsoda {
+    padding-left: 320px;
+    font-size: larger;
+}
+
+.box {
+    width: 60%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px auto;
+}

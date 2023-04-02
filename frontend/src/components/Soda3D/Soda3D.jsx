@@ -29,7 +29,7 @@ function Soda3D() {
 
         await manager.addFromPath("/assets/soda_can_red.glb")
 
-        viewer.scene.activeCamera.position.set(25,25,75);
+        viewer.scene.activeCamera.position.set(25,25,35);
         viewer.scene.activeCamera.positionUpdated();
         viewer.scene.setBackground("white");
         // viewer.scene.activeCamera.setCameraOptions({constrolsEneabled: false});
