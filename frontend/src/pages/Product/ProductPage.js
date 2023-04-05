@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 const ProductPage = () => {
-    const [sodas, setSodas] = useState([]);
+    const [] = useState(Soda_products);
 
       useEffect(() => {
         getAllSodas();

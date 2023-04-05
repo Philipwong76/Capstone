@@ -6,3 +6,4 @@ class Soda_product(models.Model):
     price = models.IntegerField()
     size = models.CharField(max_length=255)
     flavor = models.CharField(max_length=255)
+    stock = models.IntegerField()
