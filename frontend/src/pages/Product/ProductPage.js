@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 const ProductPage = () => {
-    const [] = useState(Soda_products);
+    const [sodas, setsodas] = useState(Soda_products);
 
       useEffect(() => {
         getAllSodas();
@@ -26,7 +26,7 @@ const ProductPage = () => {
             <Container>
                 <h1>Products</h1>
                 <Row>
-                    {Soda_products.map(soda => (
+                    {sodas.map(soda => (
                         <Col key={soda.id}>
                             <DisplayProduct soda={soda} />
                         </Col>

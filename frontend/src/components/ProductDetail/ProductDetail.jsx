@@ -1,15 +1,27 @@
-import React from "react";
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 import { Link, useParams } from "react-router-dom";
 import { Row, Col, Button, Card, Container, ListGroup} from "react-bootstrap";
 import { Soda_products } from "../../pages/Product/sodas";
 import "./ProductDetail.css";
 
 const ProductDetail = (props) => {
+    const [sodas, setsodas] = useState(Soda_products);
+
+      useEffect(() => {
+        getAllSodas();
+      }, []);
+
+  async function getAllSodas(){
+    const response = await axios.get(`http://127.0.0.1:8000/api/soda_product/${Soda_products.id}`);
+    console.log(response.data)
+    return response
+  }
 
     let { id } = useParams();
     console.log(id)
 
-    const product = Soda_products.find((soda) => soda.id == id)
+    const product = sodas.find((soda) => soda.id == id)
     return ( 
         <Container>
 
