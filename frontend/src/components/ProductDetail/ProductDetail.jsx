@@ -13,7 +13,7 @@ const ProductDetail = (props) => {
       }, []);
 
   async function getAllSodas(){
-    const response = await axios.get(`http://127.0.0.1:8000/api/soda_product/${Soda_products.id}`);
+    const response = await axios.get('http://127.0.0.1:8000/api/soda_product/');
     console.log(response.data)
     return response
   }
