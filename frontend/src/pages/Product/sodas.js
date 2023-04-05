@@ -6,7 +6,7 @@ export const Soda_products = [
         "description": "Classic carbonated flavor.",
         "price": 2,
         "size": "1 can",
-        "flavor": "Cola"
+        "flavor": "Cola",
     },
     {
         "id": 2,
