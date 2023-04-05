@@ -19,6 +19,10 @@ const ProductDetail = (props) => {
     return response
   }
 
+    // const ATCHandle = () =>{
+    //     console.log('Add to Cart:', id)
+    // }
+
     let { id } = useParams();
     console.log(id)
 
@@ -88,7 +92,14 @@ const ProductDetail = (props) => {
                     )}
 
                     <ListGroup.Item className="label">
-                        <Button variant="danger" className="btm">Add to Cart</Button>
+                        <Button 
+                        // onClick={ATCHandle}
+                        variant="danger" 
+                        className="btm"
+                        // disabled={product.stock == 0}
+                        type='button'>
+                            Add to Cart
+                            </Button>
                     </ListGroup.Item>
 
                 </ListGroup>

@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 const ProductPage = () => {
-    const [sodas] = useState(Soda_products);
+    const [sodas, setsodas] = useState(Soda_products);
 
       useEffect(() => {
         getAllSodas();
@@ -19,6 +19,7 @@ const ProductPage = () => {
   async function getAllSodas(){
     const response = await axios.get('http://127.0.0.1:8000/api/soda_product/');
     console.log(response.data)
+    setsodas(response.data)
     return response
   }
     return ( 
