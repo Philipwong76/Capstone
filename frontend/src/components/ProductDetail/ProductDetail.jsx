@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import { Link, useParams } from "react-router-dom";
-import { Row, Col, Button, Card, Container, ListGroup } from "react-bootstrap";
+import { Row, Col, Button, Card, Container, ListGroup, Form } from "react-bootstrap";
 import { Soda_products } from "../../pages/Product/sodas";
 import "./ProductDetail.css";
 
@@ -18,6 +18,7 @@ const ProductDetail = (props) => {
     setsodas(response.data)
     return response
   }
+
 
     let { id } = useParams();
     console.log(id)
@@ -65,6 +66,7 @@ const ProductDetail = (props) => {
                             </Col>
                         </Row>
                     </ListGroup.Item>
+
 
                     <ListGroup.Item className="label">
                         <Button>
