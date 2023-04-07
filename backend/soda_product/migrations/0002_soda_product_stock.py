@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='soda_product',
+            model_name='Soda_product',
             name='stock',
             field=models.IntegerField(default=0),
             preserve_default=False,

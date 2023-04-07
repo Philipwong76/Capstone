@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import { Link, useParams } from "react-router-dom";
-import { Row, Col, Button, Card, Container, ListGroup, Form, ListGroupItem} from "react-bootstrap";
+import { Row, Col, Button, Card, Container, ListGroup } from "react-bootstrap";
 import { Soda_products } from "../../pages/Product/sodas";
 import "./ProductDetail.css";
 
@@ -19,14 +19,11 @@ const ProductDetail = (props) => {
     return response
   }
 
-    // const ATCHandle = () =>{
-    //     console.log('Add to Cart:', id)
-    // }
-
     let { id } = useParams();
     console.log(id)
 
     const product = sodas.find((soda) => soda.id == id)
+    console.log(product)
     return ( 
         <Container>
 
@@ -69,35 +66,8 @@ const ProductDetail = (props) => {
                         </Row>
                     </ListGroup.Item>
 
-                    {product.stock > 0 && (
-                        <ListGroup.Item>
-                            <Col>QTY</Col>
-                            <Col>
-                                <Form.Control
-                                    as="select"
-                                    value="{QTY}"
-                                    onChange={(e) => setsodas(e.target.value)}                                
-                                >
-                                    {
-                                        [...Array(product.stock).keys()].map((x) =>(
-                                            <option key={x + 1} value={x + 1}>
-                                                {x + 1}
-                                            </option>
-                                        ))
-                                    }
-
-                                </Form.Control>
-                            </Col>
-                        </ListGroup.Item>
-                    )}
-
                     <ListGroup.Item className="label">
-                        <Button 
-                        // onClick={ATCHandle}
-                        variant="danger" 
-                        className="btm"
-                        // disabled={product.stock == 0}
-                        type='button'>
+                        <Button>
                             Add to Cart
                             </Button>
                     </ListGroup.Item>
