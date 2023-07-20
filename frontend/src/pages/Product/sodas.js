@@ -10,7 +10,7 @@ export const Soda_products = [
     },
     {
         "id": 2,
-        "image": '/images/Lime.jpeg',
+        "image": '/images/Lime.jpg',
         "product": "Pop Lime",
         "description": "Classic carbonated flavor.",
         "price": 2,
@@ -19,7 +19,7 @@ export const Soda_products = [
     },
     {
         "id": 3,
-        "image": '/images/Ramue.jpeg',
+        "image": '/images/Ramue.jpg',
         "product": "Pop Ramue",
         "description": "Classic carbonated flavor.",
         "price": 2,
@@ -28,7 +28,7 @@ export const Soda_products = [
     },
     {
         "id": 4,
-        "image": '/images/Strawberry.jpeg',
+        "image": '/images/Strawberry.jpg',
         "product": "Pop Strawberry",
         "description": "Classic carbonated flavor.",
         "price": 2,
@@ -37,7 +37,7 @@ export const Soda_products = [
     },
     {
         "id": 5,
-        "image": '/images/Peach.jpeg',
+        "image": '/images/Peach.jpg',
         "product": "Pop Peach",
         "description": "Classic carbonated flavor.",
         "price": 2,
@@ -46,7 +46,7 @@ export const Soda_products = [
     },
     {
         "id": 6,
-        "image": '/images/Orange.jpeg',
+        "image": '/images/Orange.jpg',
         "product": "Pop Orange",
         "description": "Classic carbonated flavor.",
         "price": 2,
@@ -55,7 +55,7 @@ export const Soda_products = [
     },
     {
         "id": 7,
-        "image": '/images/Grape.jpeg',
+        "image": '/images/Grape.jpg',
         "product": "Pop Grape",
         "description": "Classic carbonated flavor.",
         "price": 2,
